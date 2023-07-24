@@ -7,7 +7,6 @@ public class Solution {
              count++;
              n = n & (n-1);
          }
-
          return count;
     }
 }
