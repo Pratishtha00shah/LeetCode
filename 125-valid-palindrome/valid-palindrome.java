@@ -10,6 +10,7 @@ class Solution {
 
 					char curFirst = s.charAt(start);
 					char curLast = s.charAt(last);
+					
 					if(!Character.isLetterOrDigit(curFirst)) {
 						start++;
 					} else if(!Character.isLetterOrDigit(curLast)) {
