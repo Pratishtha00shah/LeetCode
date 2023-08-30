@@ -1,20 +1,9 @@
-// class Solution {
-//     public String interpret(String command) {
-        
-//     }
-// }
-
 class Solution {
     public String interpret(String command) {
-        StringBuilder ans = new StringBuilder();
-        for (int i = 0; i < command.length(); ++i) {
-            char c = command.charAt(i);
-            if (c == 'G') {
-                ans.append(c);
-            } else if (c == '(') {
-                ans.append(command.charAt(i + 1) == ')' ? "o" : "al");
-            }
-        }
-        return ans.toString();
+        String str1 = command.replace("()","o");
+        String str2 = str1.replace("(al)","al");
+
+        return str2;
     }
 }
+
